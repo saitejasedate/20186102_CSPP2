@@ -9,7 +9,7 @@ public final class Solution {
     private Solution() {
         //Constructor is not used
     }
-    /*
+    /**
     Do not modify this main function.
     @param      args  The arguments
     */
@@ -30,8 +30,8 @@ public final class Solution {
      * @param      b     { parameter_description }
      * @param      c     { parameter_description }
      */
-    public static void roots(final int a, final int b, final int c){
-        long d = (b * b) - (2 * 2 * a *c);
+    public static void roots(final int a, final int b, final int c) {
+        long d = (b * b) - (2 * 2 * a * c);
         double root1 = (-b + (Math.sqrt(Math.abs(d)))) / (2 * a);
         double root2 = (-b - (Math.sqrt(Math.abs(d)))) / (2 * a);
         System.out.println(root1 + " " + root2);
