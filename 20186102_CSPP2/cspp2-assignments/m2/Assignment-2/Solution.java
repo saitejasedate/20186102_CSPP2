@@ -11,7 +11,6 @@ public final class Solution {
     }
     /*
     Do not modify this main function.
-    
     @param      args  The arguments
     */
     public static void main(final String[] args) {
