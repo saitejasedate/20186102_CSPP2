@@ -1,23 +1,35 @@
 import java.util.Scanner;
-
-public class Solution {
+/**
+ * { item_description }
+ */
+public final class Solution {
 	/*
 	Do not modify this main function.
+	
+	@param      args  The arguments
 	*/
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int a = scan.nextInt();
 		int b = scan.nextInt();
 		int c = scan.nextInt();
-		rootsOfQuadraticEquation(a, b, c);
+		roots(a, b, c);
 	}
 	/*
 	Need to write the rootsOfQuadraticEquation function and print the output.
 	*/
-	public static void rootsOfQuadraticEquation(int a,int b,int c){
-		long d = (b * b) - (4 * a *c);
+	
+	/**
+	 * { function_description }
+	 *
+	 * @param      a     { parameter_description }
+	 * @param      b     { parameter_description }
+	 * @param      c     { parameter_description }
+	 */
+	public static void roots(final int a, final int b, final int c){
+		long d = (b * b) - (2 * 2 * a *c);
 		double root1 = (-b + (Math.sqrt(Math.abs(d)))) / (2 * a);
 		double root2 = (-b - (Math.sqrt(Math.abs(d)))) / (2 * a);
-		System.out.println(root1 +" "+ root2);
+		System.out.println(root1 + " " + root2);
 	}
 }
