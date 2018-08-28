@@ -25,7 +25,7 @@ public final class Solution {
         } else {
             return 1;
         }
-    
+
     }
     /**
      * It defines the main function.
@@ -36,7 +36,7 @@ public final class Solution {
         /**
          * { var_description }
          */
-        Scanner s = new Scanner(System.in);      
+        Scanner s = new Scanner(System.in);
         int base = s.nextInt();
         int exponent = s.nextInt();
         long result = power(base, exponent);
