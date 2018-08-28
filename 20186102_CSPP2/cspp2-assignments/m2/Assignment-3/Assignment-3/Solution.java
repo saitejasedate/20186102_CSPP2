@@ -12,7 +12,7 @@ public final class Solution {
          */
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      base      The base
      * @param      exponent  The exponent
