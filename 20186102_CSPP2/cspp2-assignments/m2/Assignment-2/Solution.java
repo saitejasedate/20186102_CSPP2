@@ -4,7 +4,7 @@ import java.util.Scanner;
  */
 public final class Solution {
     /**
-     * { item_description }
+     * { item_description }.
      */
     private Solution() {
         //Constructor is not used
@@ -24,9 +24,8 @@ public final class Solution {
     /*
     Need to write the rootsOfQuadraticEquation function and print the output.
     */
-    
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      a     { parameter_description }
      * @param      b     { parameter_description }
