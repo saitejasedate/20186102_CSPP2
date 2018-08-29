@@ -19,6 +19,15 @@ public class Solution {
     /*
     Need to write the gcd function and print the output.
     */
+
+    /**
+     * { function_description }
+     *
+     * @param      a     { parameter_description }
+     * @param      b     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static int gcd(final int a, final int b) {
         if (a == b) {
             return a;
