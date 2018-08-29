@@ -11,7 +11,7 @@ public class Solution {
 
     public static void main(final String[] args) {
         /**
-         * { var_description }
+         * { main function to print output }
          */
         Scanner s = new Scanner(System.in);
         int n1 = s.nextInt();
