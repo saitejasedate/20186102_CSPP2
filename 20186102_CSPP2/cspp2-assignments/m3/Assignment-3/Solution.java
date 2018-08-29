@@ -25,7 +25,7 @@ public final class Solution {
     */
 
     /**.
-     * { function_description }.
+     *gcd function.
      *
      * @param      a     { parameter_description }.
      * @param      b     { parameter_description }.
