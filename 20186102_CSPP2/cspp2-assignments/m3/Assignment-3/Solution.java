@@ -1,7 +1,7 @@
 import java.util.Scanner;
-/*
-    Do not modify this main function.
-    */
+/**
+* Do not modify this main function.
+*/
 public final class Solution {
     /**
      * It describes the main function.
@@ -11,10 +11,10 @@ public final class Solution {
          * It is a constructor
          */
     }
+    /**
+     * @param args are of str type.
+     */
     public static void main(final String[] args) {
-        /**.
-         * main function to print output.
-         */
         Scanner s = new Scanner(System.in);
         int n1 = s.nextInt();
         int n2 = s.nextInt();
@@ -24,8 +24,8 @@ public final class Solution {
     Need to write the gcd function and print the output.
     */
 
-    /**.
-     *gcd function.
+    /**
+     * gcd function.
      *
      * @param      a     { parameter_description }.
      * @param      b     { parameter_description }.
