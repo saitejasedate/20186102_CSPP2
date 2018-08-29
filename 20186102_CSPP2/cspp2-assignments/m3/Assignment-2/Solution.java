@@ -13,10 +13,10 @@ public class Solution {
         int c = 0;
         while(i<=n){
         	for(;i<=n;i=i+10){
-        		c+=1;
+        		c+=2;
+        	System.out.println(i);
         	}
-        }
-        System.out.println(2*c);
+        }System.out.println(2*c);
         
        
         
