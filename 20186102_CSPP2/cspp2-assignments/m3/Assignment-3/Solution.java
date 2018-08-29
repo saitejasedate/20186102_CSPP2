@@ -11,7 +11,7 @@ public class Solution {
 
     public static void main(final String[] args) {
         /**.
-         * main function to print output. 
+         * main function to print output.
          */
         Scanner s = new Scanner(System.in);
         int n1 = s.nextInt();
