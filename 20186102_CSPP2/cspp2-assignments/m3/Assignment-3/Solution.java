@@ -4,19 +4,13 @@ import java.util.Scanner;
     */
 public final class Solution {
     /**
-     * It describes the main function
+     * It describes the main function.
      */
     private Solution() {
         /**
          * It is a constructor
          */
     }
-    /**
-     * { function_description }
-     *
-     * @param      args  The arguments
-     */
-
     public static void main(final String[] args) {
         /**.
          * main function to print output.
