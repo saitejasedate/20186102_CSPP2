@@ -1,7 +1,7 @@
 import java.util.Scanner;
 /*
-	Do not modify this main function.
-	*/
+    Do not modify this main function.
+    */
 public class Solution {
     /*
      * { function_description }
@@ -17,8 +17,8 @@ public class Solution {
         System.out.println(gcd(n1,n2));
     }
     /*
-	Need to write the gcd function and print the output.
-	*/
+    Need to write the gcd function and print the output.
+    */
     public static int gcd(final int a, final int b) {
         if(a == b) {
             return a;
