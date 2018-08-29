@@ -20,13 +20,13 @@ public class Solution {
     Need to write the gcd function and print the output.
     */
     public static int gcd(final int a, final int b) {
-        if(a == b) {
+        if (a == b) {
             return a;
-        } else if(a == 0) {
+        } else if (a == 0) {
             return b;
-        } else if(b == 0) {
+        } else if (b == 0) {
             return a;
-        } else if(a > b) {
+        } else if (a > b) {
             return gcd(a % b, b);
         } else {
             return gcd(a, b % a);
