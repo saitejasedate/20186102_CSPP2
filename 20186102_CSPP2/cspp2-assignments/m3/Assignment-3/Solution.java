@@ -3,15 +3,15 @@ import java.util.Scanner;
     Do not modify this main function.
     */
 public class Solution {
-    /*
-     * { function_description }
+    /*.
+     *  function_description.
      *
      * @param      args  The arguments
      */
 
     public static void main(final String[] args) {
-        /**
-         * { main function to print output }
+        /**.
+         * main function to print output. 
          */
         Scanner s = new Scanner(System.in);
         int n1 = s.nextInt();
@@ -22,7 +22,7 @@ public class Solution {
     Need to write the gcd function and print the output.
     */
 
-    /**
+    /**.
      * { function_description }.
      *
      * @param      a     { parameter_description }.
