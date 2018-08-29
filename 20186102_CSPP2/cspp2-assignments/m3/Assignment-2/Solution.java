@@ -14,7 +14,7 @@ public class Solution {
         while(i<=n){
         	for(;i<=n;i=i+10){
         		c+=2;
-        	System.out.println(i);
+        	// System.out.println(i);
         	}
         }System.out.println(2*c);
         
