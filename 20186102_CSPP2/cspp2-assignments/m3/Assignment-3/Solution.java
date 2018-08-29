@@ -2,9 +2,17 @@ import java.util.Scanner;
 /*
     Do not modify this main function.
     */
-public class Solution {
-    /*.
-     *  function_description.
+public final class Solution {
+    /**
+     * It describes the main function
+     */
+    private Solution() {
+        /**
+         * It is a constructor
+         */
+    }
+    /**
+     * { function_description }
      *
      * @param      args  The arguments
      */
