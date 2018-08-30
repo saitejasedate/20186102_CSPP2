@@ -11,12 +11,11 @@ public class Solution
 		int array_size = sc.nextInt();
 		int[] array = new int[array_size];
 		// System.out.println("Enter elements of an array:");
-		for(int i = 0; i < array_size; i++)
-		{
+		for (int i = 0; i < array_size; i++) {
 			array[i] = sc.nextInt();
 		}
 		int max = array[0];
-		for(int i = 0; i < array_size; i++) {
+		for (int i = 0; i < array_size; i++) {
 			if (max < array[i]) {
 				max = array[i];
 			}
