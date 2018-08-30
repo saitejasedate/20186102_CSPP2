@@ -1,3 +1,6 @@
+/**
+ * largest of elements in an array.
+ */
 import java.util.Scanner;
 class Solution {
     /*
