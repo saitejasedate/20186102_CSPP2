@@ -7,10 +7,10 @@ public class Solution
 	public static void main(String[] args)
 	{
 		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter the size of an array:");
+		// System.out.println("Enter the size of an array:");
 		int array_size = sc.nextInt();
 		int[] array = new int[array_size];
-		System.out.println("Enter elements of an array:");
+		// System.out.println("Enter elements of an array:");
 		for(int i = 0; i < array_size; i++)
 		{
 			array[i] = sc.nextInt();
@@ -23,7 +23,7 @@ public class Solution
 				max = array[i];
 			}
 		}
-		System.out.println("Maximum of elements in an array is:"+ max);
+		System.out.println(max);
 
 	}
 }
