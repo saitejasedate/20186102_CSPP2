@@ -8,14 +8,14 @@ public class Solution
 	{
 		Scanner sc=new Scanner(System.in);
 		// System.out.println("Enter the size of an array:");
-		int array_size = sc.nextInt();
-		int[] array = new int[array_size];
+		int arraysize = sc.nextInt();
+		int[] array = new int[arraysize];
 		// System.out.println("Enter elements of an array:");
-		for (int i = 0; i < array_size; i++) {
+		for (int i = 0; i < arraysize; i++) {
 			array[i] = sc.nextInt();
 		}
 		int max = array[0];
-		for (int i = 0; i < array_size; i++) {
+		for (int i = 0; i < arraysize; i++) {
 			if (max < array[i]) {
 				max = array[i];
 			}
