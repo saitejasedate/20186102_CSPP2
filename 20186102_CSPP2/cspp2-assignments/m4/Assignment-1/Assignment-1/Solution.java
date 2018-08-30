@@ -3,7 +3,7 @@ import java.util.Scanner;
  *@author: Saiteja
  * Class for solution.
  */
-class Solution {
+public final class Solution {
     /**
     Fill this main function to print maximum of given array.
     */
@@ -13,6 +13,12 @@ class Solution {
     private Solution() {
 
     }
+    
+    /**
+     * { function_description }.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         // System.out.println("Enter the size of an array:");
