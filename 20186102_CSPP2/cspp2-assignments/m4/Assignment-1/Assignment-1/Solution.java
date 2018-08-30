@@ -1,7 +1,7 @@
-import java.util.*;
+import java.util.Scanner;
 public class Solution {
     /*
-    Fill this main function to print maximum of given array
+    Fill this main function to print maximum of given array.
     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
