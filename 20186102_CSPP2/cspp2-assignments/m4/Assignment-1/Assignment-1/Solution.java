@@ -16,8 +16,7 @@ public class Solution
 			array[i] = sc.nextInt();
 		}
 		int max = array[0];
-		for(int i = 0; i < array_size; i++)
-		{
+		for(int i = 0; i < array_size; i++){
 			if(max < array[i]) {
 				max = array[i];
 			}
