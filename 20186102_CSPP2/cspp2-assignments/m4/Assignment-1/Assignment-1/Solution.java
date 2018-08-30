@@ -6,7 +6,7 @@ public class Solution
 	*/
 	public static void main(String[] args)
 	{
-		Scanner sc=new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		// System.out.println("Enter the size of an array:");
 		int arraysize = sc.nextInt();
 		int[] array = new int[arraysize];
