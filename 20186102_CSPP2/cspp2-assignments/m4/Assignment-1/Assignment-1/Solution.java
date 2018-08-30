@@ -1,11 +1,9 @@
 
 import java.util.*;
-public class Solution
-{/*
+public class Solution {/*
 	Fill this main function to print maximum of given array
 	*/
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		// System.out.println("Enter the size of an array:");
 		int arraysize = sc.nextInt();
