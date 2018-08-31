@@ -28,9 +28,9 @@ public class Solution {
             for (int i = 0; i < matrix1.length; i++) {
                 String s = "";
                 for (int j = 0; j < matrix1[0].length; j++) {
-                    s += matrix1[i][j] + matrix2[i][j] +" ";
+                    s += matrix1[i][j] + matrix2[i][j] + " ";
                 } System.out.println(s.trim());
-            } 
+            }
         } else {
                 System.out.println("not possible");
             }
