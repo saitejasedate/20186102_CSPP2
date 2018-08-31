@@ -18,7 +18,7 @@ public class Solution {
     static String binaryToDecimal(final String output) {
         String str = "";
         int sum = 0;
-        for (int i = output.length()-1; i >= 0; i--) {
+        for (int i = output.length() - 1; i >= 0; i--) {
             if (output.charAt(i) == '1') {
                 sum = sum + (int) Math.pow(2, output.length() - i - 1);
             }
