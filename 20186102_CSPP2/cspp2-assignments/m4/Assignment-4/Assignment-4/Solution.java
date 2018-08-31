@@ -7,7 +7,7 @@ public final class Solution {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
         String reverse = reverseString(str);
-        System.out.println (reverse);
+        System.out.println(reverse);
 
     }
     //Write reverseString function
