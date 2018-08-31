@@ -1,6 +1,22 @@
-import java.util.*;
-public class Solution {
-    /* Fill the main function to print resultant of addition of matrices*/
+/**
+ * program to add two matrices of same size.
+ */
+import java.util.Scanner;
+/**
+ * @author : saiteja.
+ */
+public final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //empty constructor.
+    }
+    /**
+     * Main method.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int row = sc.nextInt();
@@ -21,6 +37,12 @@ public class Solution {
         }
         print(matrix1, matrix2);
     }
+    /**
+     * function to add two matrices.
+     *
+     * @param      matrix1  The matrix 1
+     * @param      matrix2  The matrix 2
+     */
     static void print(final int[][] matrix1, int[][] matrix2) {
         int x = matrix1.length, y = matrix1[0].length;
         int u = matrix2.length, v = matrix2[0].length;
