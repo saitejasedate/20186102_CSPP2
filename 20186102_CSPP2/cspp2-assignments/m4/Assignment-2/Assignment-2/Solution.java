@@ -29,7 +29,7 @@ public class Solution {
             System.out.println(s.trim());
         }
     }*/
-    public static void print(int[][] matrix1, int[][] matrix2){
+    static void print(int[][] matrix1, int[][] matrix2){
         int x = matrix1.length, y = matrix1[0].length;
         int u = matrix2.length, v = matrix2[0].length;
         if (x == u & y == v){
