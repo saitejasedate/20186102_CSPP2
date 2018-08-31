@@ -6,8 +6,8 @@ public class Solution {
         int row = sc.nextInt();
         int col = sc.nextInt();
         int[][] matrix1 = new int[row][col];
-        for(int i = 0; i < row; i++) {
-            for(int j = 0; j < col; j++) {
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
                 matrix1[i][j] = sc.nextInt();
             }
         }
