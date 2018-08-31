@@ -33,23 +33,18 @@ public class Solution {
         int x = matrix1.length, y = matrix1[0].length;
         int u = matrix2.length, v = matrix2[0].length;
         if (x == u & y == v){
-        for(int i = 0; i < matrix1.length; i++){
-            String s = "";
-            for(int j = 0; j<matrix1[0].length; j++){
-                s += matrix1[i][j]+matrix2[i][j] +" ";
-            }
-            
-            System.out.println(s.trim());
-        }
+            for(int i = 0; i < matrix1.length; i++){
+                String s = "";
+                for(int j = 0; j<matrix1[0].length; j++){
+                    s += matrix1[i][j]+matrix2[i][j] +" ";
+                }
+                System.out.println(s.trim());
+            } 
         } else {
-            System.out.println("not possible");
-            
-        
-        }
+                System.out.println("not possible");
+            }
     }
 }
-        
-
     
 
     // public static void main(String[] args) {
