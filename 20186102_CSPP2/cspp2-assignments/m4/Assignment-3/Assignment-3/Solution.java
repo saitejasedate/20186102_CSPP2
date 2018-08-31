@@ -3,7 +3,7 @@ the decimal value for the given binary string.*/
 
 import java.util.Scanner;
 /**
- * author : saiteja.
+ * author : saiteja
  */
 public final class Solution {
     /**
