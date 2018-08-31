@@ -22,13 +22,13 @@ public final class Solution {
         System.out.println(reverse);
 
     }
-    //
-    // Write reverseString function.
-    //
-    // @param      str   The string.
-    //
-    // @return     { description_of_the_return_value }.
-    //
+    /**
+     * { function_description }.
+     *
+     * @param      str   The string
+     *
+     * @return     { description_of_the_return_value }.
+     */
     public static String reverseString(final String str) {
         String output = "";
         for (int element = str.length() - 1; element >= 0; element--) {
