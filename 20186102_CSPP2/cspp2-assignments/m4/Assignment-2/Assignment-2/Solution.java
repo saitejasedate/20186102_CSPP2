@@ -30,6 +30,9 @@ public class Solution {
         }
     }*/
     public static void print(int[][] matrix1, int[][] matrix2){
+        int x = matrix1.length, y = matrix1[0].length;
+        int u = matrix2.length, v = matrix2[0].length;
+        if (x == u & y == v){
         for(int i = 0; i < matrix1.length; i++){
             String s = "";
             for(int j = 0; j<matrix1[0].length; j++){
@@ -37,6 +40,11 @@ public class Solution {
             }
             
             System.out.println(s.trim());
+        }
+        } else {
+            System.out.println("not possible");
+            
+        
         }
     }
 }
