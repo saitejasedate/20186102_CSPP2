@@ -43,7 +43,7 @@ public final class Solution {
      * @param      matrix1  The matrix 1
      * @param      matrix2  The matrix 2
      */
-    static void print(final int[][] matrix1, int[][] matrix2) {
+    static void print(final int[][] matrix1, final int[][] matrix2) {
         int x = matrix1.length, y = matrix1[0].length;
         int u = matrix2.length, v = matrix2[0].length;
         if (x == u & y == v) {
