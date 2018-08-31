@@ -27,7 +27,7 @@ public final class Solution {
     //
     // @param      str   The string.
     //
-    // @return     { description_of_the_return_value }
+    // @return     { description_of_the_return_value }.
     //
     public static String reverseString(final String str) {
         String output = "";
