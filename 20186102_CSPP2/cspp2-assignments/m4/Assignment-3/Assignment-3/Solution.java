@@ -12,7 +12,7 @@ public class Solution
 		Scanner sc=new Scanner(System.in);
 		int numberofinputs = sc.nextInt();
 		for(int i = 0;i <= numberofinputs;i++){
-			String s = sc.nextLine();
+			String s = sc.next();
 			String res = binaryToDecimal(s);
 			System.out.println(res);
 		}
