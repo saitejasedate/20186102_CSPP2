@@ -9,7 +9,6 @@ public final class Solution {
     private Solution() {
 
     }
-    
     /**
      * { function_description }.
      *
