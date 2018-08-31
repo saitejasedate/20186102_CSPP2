@@ -1,7 +1,6 @@
 
 // Given an String, Write a java method that returns the decimal value for the given binary string.
 
-
 import java.util.Scanner;
 public class Solution
 {/*
@@ -11,7 +10,7 @@ public class Solution
 	{
 		Scanner sc=new Scanner(System.in);
 		int numberofinputs = sc.nextInt();
-		for(int i = 0;i <= numberofinputs;i++){
+		for(int i = 0;i < numberofinputs;i++){
 			String s = sc.next();
 			String res = binaryToDecimal(s);
 			System.out.println(res);
