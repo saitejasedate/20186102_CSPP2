@@ -26,11 +26,12 @@ final class Solution {
 
     // write your code here
         int[][] matrix = new int[rows][columns];
+        int hundred = 100;
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
-                for (int k = 0; k < a[i][j]; k += 100) {
+                for (int k = 0; k < a[i][j]; k += hundred) {
                     int low = k;
-                    int high = k + 100;
+                    int high = k + hundred;
                     int mid = (low + high) / 2;
                     if (a[i][j] > low && a[i][j] < high) {
                         if (a[i][j] < mid) {
