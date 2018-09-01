@@ -19,7 +19,7 @@ public final class Solution {
      */
     static void oddComposites(final int n) {
         final int nine = 9;
-        for (int number = nine; number <= n ; number++) {
+        for (int number = nine; number <= n; number++) {
             int count = 1;
             for (int i = 2; i < number / 2; i++) {
                 if (number % i == 0) {
