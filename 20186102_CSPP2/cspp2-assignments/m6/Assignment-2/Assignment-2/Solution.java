@@ -24,9 +24,8 @@ final class Solution {
      */
     static int[][] roundHundred(final int[][] a, final int rows,
         final int columns) {
-    // write your code here
-        int[][] matrix = new int[rows][columns];
         int onehundred = 100;
+        int[][] matrix = new int[rows][columns];
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
                 for (int k = 0; k < a[i][j]; k += onehundred) {
