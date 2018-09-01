@@ -24,7 +24,7 @@ final class Solution {
      */
     static int[][] roundHundred(final int[][] a, final int rows, final int columns) {
 
-	// write your code here
+    // write your code here
         int[][] matrix = new int[rows][columns];
         for(int i = 0; i < rows; i++) {
             for(int j = 0; j < columns; j++) {
@@ -36,15 +36,15 @@ final class Solution {
                         if(a[i][j] < mid) {
                             matrix[i][j] = low;
                             break;
-                        }else{
+                        } else {
                             matrix[i][j] = high;
                             break;
                         }
-                    } 
+                    }
                 }
             }
         }
-	
+
     return matrix;
     }
     /**
@@ -71,3 +71,4 @@ final class Solution {
         }
     }
 }
+
