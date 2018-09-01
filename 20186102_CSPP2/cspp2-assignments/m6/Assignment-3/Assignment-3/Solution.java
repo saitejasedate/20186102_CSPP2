@@ -25,12 +25,12 @@ final class Solution {
      */
     static char[] replaceAll(final char[] charArray,
         final char oldChar, final char newChar) {
-    	for(int i = 0; i < charArray.length - 1; i++) {
-    		if(charArray[i] == oldChar){
-    			charArray[i] = newChar;
-    		}
-    	} return charArray;
-	// write your code here
+        for (int i = 0; i < charArray.length - 1; i++) {
+            if (charArray[i] == oldChar) {
+                charArray[i] = newChar;
+            }
+        } return charArray;
+    // write your code here
 
     }
     /**
@@ -53,3 +53,4 @@ final class Solution {
         System.out.println(Arrays.toString(newCharArray));
     }
 }
+
