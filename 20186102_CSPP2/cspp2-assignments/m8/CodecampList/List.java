@@ -186,9 +186,8 @@ public class List {
         for (int i = 0; i < size-1; i++) {
             str += list[i] + ",";
         }
-        return str + list[size-1] + "]";
-    } 
-    
+        return str + list[size - 1] + "]";
+    }
     /*
      * Contains return true if the list has
      * the item passed as an argument to the method
@@ -204,7 +203,7 @@ public class List {
     }
 
     /*
-     * Returns the index of the first occurrence 
+     * Returns the index of the first occurrence
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
      */
