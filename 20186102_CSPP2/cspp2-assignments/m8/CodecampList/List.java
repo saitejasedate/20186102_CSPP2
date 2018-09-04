@@ -128,11 +128,16 @@ public class List {
     public void remove(int index) {
         // write the logic for remove here.
         // Think about what to do to the size variable.
-        for(int i = index; i < size-1; i++){
-            list[i] = list[i+1];
+        if(index < size){
+            for(int i = index; i < size-1; i++){
+                list[i] = list[i+1];
+            }
+            size--;
+            list[size] = 0;
+        }else{
+            System.out.println("Invalid Position Exception");
         }
-        size--;
-        list[size] = 0;
+        
         
     }
 
