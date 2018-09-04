@@ -128,8 +128,8 @@ public class List {
     public void remove(final int index) {
         // write the logic for remove here.
         // Think about what to do to the size variable.
-        if(index < size) {
-            for(int i = index; i < size - 1; i++) {
+        if (index < size) {
+            for (int i = index; i < size - 1; i++) {
                 list[i] = list[i + 1];
             }
             size--;
@@ -146,7 +146,7 @@ public class List {
      * How can an element not be there at a given position?
      * Well, if the position is greater than the number of items
      * in the list then that would mean the item doesn't exist.
-     * How do we check if the position is greater than the 
+     * How do we check if the position is greater than the
      * number of items in the list? Would size variable be useful?
      */
     public int get(final int index) {
