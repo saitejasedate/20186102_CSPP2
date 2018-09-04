@@ -51,7 +51,6 @@ public class List {
      * to be accessed by the methods that are outside of the List class.
      *
      */
-    
     // declare a private int size
         private int size;
     // again, don't initialize it here
