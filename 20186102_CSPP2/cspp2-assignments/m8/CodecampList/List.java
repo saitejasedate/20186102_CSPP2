@@ -28,6 +28,7 @@ public class List {
      *
     */
     // declare a private int[]
+    /**@ array**/
         private int[] list;
     // don't create the array yet using new
     // that's the job of the List constructor
@@ -53,6 +54,7 @@ public class List {
      */
 
     // declare a private int size
+    /**@ size**/
         private int size;
     // again, don't initialize it here
     // variable initialization should be done in the constructor
