@@ -137,10 +137,7 @@ public class List {
         } else {
             System.out.println("Invalid Position Exception");
         }
-        
-        
     }
-
     /*
      * Get method has to return the items that is
      * at the index position passed as an argument to the method.
