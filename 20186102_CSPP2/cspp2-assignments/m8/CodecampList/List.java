@@ -128,13 +128,13 @@ public class List {
     public void remove(final int index) {
         // write the logic for remove here.
         // Think about what to do to the size variable.
-        if(index < size){
-            for(int i = index; i < size-1; i++){
+        if(index < size) {
+            for(int i = index; i < size-1; i++) {
                 list[i] = list[i+1];
             }
             size--;
             list[size] = 0;
-        }else{
+        } else {
             System.out.println("Invalid Position Exception");
         }
         
@@ -154,7 +154,7 @@ public class List {
      */
     public int get(final int index) {
         // Replace the code below to write the code for get
-        if(index < size){
+        if (index < size) {
             return list[index];
         }
         return -1;
@@ -183,7 +183,7 @@ public class List {
     public String toString() {
         // Replace the code below
         String str = "[";
-        for(int i = 0; i < size-1; i++){
+        for (int i = 0; i < size-1; i++) {
             str += list[i] + ",";
         }
         return str + list[size-1] + "]";
@@ -197,7 +197,7 @@ public class List {
      */
     public boolean contains(final int item) {
         // Replace the code below
-        if(indexOf(item) >= 0){
+        if (indexOf(item) >= 0) {
             return true;
         }
         return false;
@@ -209,8 +209,8 @@ public class List {
      * or -1 if this list does not contain the element.
      */
     public int indexOf(final int item) {
-        for(int i = 0; i<size; i++){
-            if(list[i] == item){
+        for (int i = 0; i<size; i++) {
+            if (list[i] == item) {
                 return i;
             }
         }
