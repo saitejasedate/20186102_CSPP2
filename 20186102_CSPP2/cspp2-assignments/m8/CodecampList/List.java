@@ -66,6 +66,9 @@ public class List {
      *
      */
     private final int ten = 10;
+    /**
+     * Constructs the object.
+     */
     public List() {
 
         // what are the two variables to be initialized here?
