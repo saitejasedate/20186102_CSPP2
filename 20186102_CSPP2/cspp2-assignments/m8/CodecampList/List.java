@@ -51,7 +51,7 @@ public class List {
      * to be accessed by the methods that are outside of the List class.
      *
      */
-
+    
     // declare a private int size
         private int size;
     // again, don't initialize it here
@@ -66,6 +66,9 @@ public class List {
      *
      */
     private final int ten = 10;
+    /**
+     * Constructs the object.
+     */
     public List() {
 
         // what are the two variables to be initialized here?
