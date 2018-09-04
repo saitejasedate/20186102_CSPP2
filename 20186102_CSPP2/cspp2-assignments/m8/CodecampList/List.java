@@ -60,8 +60,8 @@ public class List {
      * The purpose of the constructor is to initialize the
      * class variables with some default values.
      */
-    int ten = 10;
     public List() {
+    int ten = 10;
 
         // what are the two variables to be initialized here?
         // think about the private variables described above.
