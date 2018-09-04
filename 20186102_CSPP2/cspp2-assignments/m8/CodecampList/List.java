@@ -27,12 +27,11 @@ public class List {
      * This is a hard concept to understand. Discuss with your mentor.
      *
     */
-    private int[] list;
-    // declare a private int[]
-    // don't create the array yet using new
-    // that's the job of the List constructor
-
-    /*
+    private int[] list; // declare a private int[] // don't create the array
+    /**
+     yet using new // that's the job of the List constructor
+    
+     /*
      * What are the other class variables needed for creating a list?
      * How about keeping track of the size of the list?
      * If you add 2 items to the list then the size should be 2.
@@ -49,8 +48,8 @@ public class List {
      * So, to keep track of the size we need a variable called size
      * Again, we use private as we don't want that size variable
      * to be accessed by the methods that are outside of the List class.
-     *
-     */
+     * { list_item_description }
+    */
     private int size;
     // declare a private int size
     // again, don't initialize it here
