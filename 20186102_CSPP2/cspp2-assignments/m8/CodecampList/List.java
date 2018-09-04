@@ -129,8 +129,8 @@ public class List {
         // write the logic for remove here.
         // Think about what to do to the size variable.
         if(index < size) {
-            for(int i = index; i < size-1; i++) {
-                list[i] = list[i+1];
+            for(int i = index; i < size - 1; i++) {
+                list[i] = list[i + 1];
             }
             size--;
             list[size] = 0;
@@ -169,7 +169,7 @@ public class List {
      * System.out.println(l);
      * This statement is a shortcut for
      * System.out.println(l.toString());
-     * 
+     *
      * So, implement the toString method to display the items
      * in the list in the square brackets notation.
      * i.e., if the list has numbers 1, 2, 3
@@ -183,7 +183,7 @@ public class List {
     public String toString() {
         // Replace the code below
         String str = "[";
-        for (int i = 0; i < size-1; i++) {
+        for (int i = 0; i < size - 1; i++) {
             str += list[i] + ",";
         }
         return str + list[size - 1] + "]";
