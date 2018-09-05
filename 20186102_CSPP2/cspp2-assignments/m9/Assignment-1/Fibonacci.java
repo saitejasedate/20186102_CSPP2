@@ -35,8 +35,8 @@ public class Fibonacci
         fibonacci_.add(num1);
         fibonacci_.add(num2);
         for (int i = 2; i<n; i++) {
-        	temp = fibonacci_.get(i - 1) + fibonacci_.get(i - 2);
-        	fibonacci_.add(temp);
+            temp = fibonacci_.get(i - 1) + fibonacci_.get(i - 2);
+            fibonacci_.add(temp);
         }
         return fibonacci_;
     }
@@ -45,7 +45,7 @@ public class Fibonacci
      *
      * @param      args  The arguments
      */
-	public static void main(final String[] args) {
+    public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         System.out.println(fib(n));
