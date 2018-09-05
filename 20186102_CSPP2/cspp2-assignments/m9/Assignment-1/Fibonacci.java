@@ -16,7 +16,17 @@ import java.util.Scanner;
  * by invoking the add method provided in the List ADT.
  *
  */
+/**.
+ * Class for fibonacci.
+ */
 public class Fibonacci {
+
+    private Fibonacci() {
+        /**.
+         * { item_description }
+         */
+
+    }
     /*
      * fib is a static method takes a argument n
      * n is the count of the fibonacci numbers to be generated.
