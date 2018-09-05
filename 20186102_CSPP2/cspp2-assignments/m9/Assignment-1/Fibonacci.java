@@ -19,8 +19,11 @@ import java.util.Scanner;
 /**.
  * Class for fibonacci.
  */
-public class Fibonacci {
+public final class Fibonacci {
 
+    /**
+     * Constructs the object.
+     */
     private Fibonacci() {
         /**.
          * { item_description }
@@ -67,3 +70,4 @@ public class Fibonacci {
         System.out.println(fib(n));
     }
 }
+
