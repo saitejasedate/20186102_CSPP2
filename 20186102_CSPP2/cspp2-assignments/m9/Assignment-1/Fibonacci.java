@@ -34,7 +34,7 @@ public class Fibonacci
         int temp = 0;
         fibonacci_.add(num1);
         fibonacci_.add(num2);
-        for (int i = 2; i<n; i++) {
+        for (int i = 2; i < n; i++) {
             temp = fibonacci_.get(i - 1) + fibonacci_.get(i - 2);
             fibonacci_.add(temp);
         }
