@@ -26,7 +26,7 @@ public class Fibonacci
      *
      * Look for the hint.txt if some of the testcases fail.
      */
-    public static List fib(int n) {
+    public static List fib(final int n) {
         // todo - complete this method
         List fibonacci_ = new List(n);
         int num1 = 0;
@@ -34,14 +34,14 @@ public class Fibonacci
         int temp = 0;
         fibonacci_.add(num1);
         fibonacci_.add(num2);
-        for(int i = 2; i<n; i++){
+        for (int i = 2; i<n; i++) {
         	temp = fibonacci_.get(i - 1) + fibonacci_.get(i - 2);
         	fibonacci_.add(temp);
         }
         return fibonacci_;
     }
 
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         System.out.println(fib(n));
