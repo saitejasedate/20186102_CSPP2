@@ -4,6 +4,13 @@ import java.util.Scanner;
  * Class for student.
  */
 class Student {
+
+    private Student() {
+        /**.
+         * { item_description }
+         */
+
+    }
     /**
      * { var_description }.
      */
@@ -71,7 +78,8 @@ public class Solution {
     /**.
      * { var_description }
      */
-    private static Scanner stdin = new Scanner(new BufferedInputStream(System.in));
+    private static Scanner stdin = new Scanner(new
+     BufferedInputStream(System.in));
     /**.
      * { function_description }
      */
@@ -131,6 +139,9 @@ public class Solution {
                 }
 
     }
+    /**.
+     * { function_description }
+     */
     public static void intType() {
         /**.
          * { var_description }
@@ -250,7 +261,6 @@ public class Solution {
                         default:
                     }
                 }
-        
     }
     /**.
      * { function_description }
@@ -314,6 +324,9 @@ public class Solution {
                     }
                 }
     }
+    /**.
+     * { function_description }
+     */
     public static void charType() {
         /**.
          * { var_description }
@@ -372,6 +385,9 @@ public class Solution {
                     }
                 }
     }
+    /**.
+     * { function_description }
+     */
     public static void studentType() {
         /**.
          * { var_description }
@@ -431,7 +447,11 @@ public class Solution {
                     }
                 }
     }
-
+    /**.
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         /**.
          * { item_description }
