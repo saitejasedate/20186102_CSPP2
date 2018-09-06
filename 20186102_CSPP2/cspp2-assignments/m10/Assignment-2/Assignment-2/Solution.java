@@ -2,7 +2,7 @@ import java.io.BufferedInputStream;
 import java.util.Scanner;
 
 public class Solution {
-    final public static void main(String[] args) {
+    public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         StringList sl = new StringList();
         StringListInterface l = (StringListInterface) sl; /*Typecasting is done
