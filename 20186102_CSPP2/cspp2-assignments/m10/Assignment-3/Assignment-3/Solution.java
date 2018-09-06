@@ -8,7 +8,12 @@ class Student {
      * { var_description }.
      */
     private String name;
-    public Student(final String name) {//A constructor used to initialize
+    /**
+     * Constructs the object.
+     *
+     * @param      name  The name
+     */
+    Student(final String name) {//A constructor used to initialize
         //the instance variables
         this.name = name;
     }
