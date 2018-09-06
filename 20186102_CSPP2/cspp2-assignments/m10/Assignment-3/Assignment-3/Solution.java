@@ -72,6 +72,9 @@ public class Solution {
      * { var_description }
      */
     private static Scanner stdin = new Scanner(new BufferedInputStream(System.in));
+    /**.
+     * { function_description }
+     */
     public static void stringType() {
         /**.
          * { var_description }
@@ -129,6 +132,9 @@ public class Solution {
 
     }
     public static void intType() {
+        /**.
+         * { var_description }
+         */
         List<Integer> listInteger = new List();
                 while (stdin.hasNext()) {
                     // read the line
@@ -183,9 +189,14 @@ public class Solution {
                         default:
                     }
                 }
-        
     }
+    /**.
+     * { function_description }
+     */
     public static void floatType() {
+        /**.
+         * { var_description }
+         */
         List<Float> listFloat = new List();
                 while (stdin.hasNext()) {
                     // read the line
@@ -241,7 +252,13 @@ public class Solution {
                 }
         
     }
+    /**.
+     * { function_description }
+     */
     public static void doubleType() {
+        /**.
+         * { var_description }
+         */
         List<Double> listDouble = new List();
                 while (stdin.hasNext()) {
                     // read the line
@@ -296,9 +313,11 @@ public class Solution {
                         default:
                     }
                 }
-        
     }
     public static void charType() {
+        /**.
+         * { var_description }
+         */
         List<Character> listCharacter = new List();
                 while (stdin.hasNext()) {
                     // read the line
@@ -352,9 +371,11 @@ public class Solution {
                         default:
                     }
                 }
-        
     }
     public static void studentType() {
+        /**.
+         * { var_description }
+         */
         List<Student> listStudent = new List();
                 while (stdin.hasNext()) {
                     // read the line
@@ -412,7 +433,10 @@ public class Solution {
     }
 
     public static void main(final String[] args) {
-        // create an object of the list to invoke methods on it
+        /**.
+         * { item_description }
+         */
+        /* create an object of the list to invoke methods on it*/
         String objectType = stdin.nextLine();
 
         switch (objectType) {
