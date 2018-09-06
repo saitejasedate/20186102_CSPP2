@@ -3,8 +3,7 @@ import java.io.PrintStream;
 import java.util.Arrays;
 import java.util.Scanner;
 
-/*
-     * The goal for the list is to store items.
+    /** The goal for the list is to store items.
      * How are we going to store the items in the list?
      * An array would be good. Right?
      * So, when we do not what we are going to have in the list
