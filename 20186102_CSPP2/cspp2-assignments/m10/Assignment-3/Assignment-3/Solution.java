@@ -316,7 +316,8 @@ public class Solution {
 		                System.out.println(listStudent.size());
 		                break;
 		                case "print":
-		                // print the list (implement toString in List class
+		                // print the list (implement
+		                // toString in List class
 		                //for this to work)
 		                // expected format is [item-1,item-2,...,item-n]
 		                // review the output testcase file
