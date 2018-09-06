@@ -41,6 +41,11 @@ class Student {
         return this.getName().equals(that.getName());
     }
 
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         return this.name;
     }
