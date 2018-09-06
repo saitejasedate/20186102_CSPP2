@@ -97,7 +97,13 @@ public class Solution {
      BufferedInputStream(System.in));
     /**.
      * { function_description }
+     * 
      */
+    private Solution() {
+        /**.
+         * { item_description }
+         */
+    } 
     public static void stringType() {
         /**.
          * { var_description }
