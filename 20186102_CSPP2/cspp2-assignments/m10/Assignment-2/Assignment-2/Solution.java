@@ -3,8 +3,10 @@ import java.util.Scanner;
 
 public class Solution {
 
-
-    public static void main(String[] args) {
+/**
+ * main function.
+ */
+    final public static void main(String[] args) {
         // create an object of the list to invoke methods on it
         StringList sl = new StringList();
         StringListInterface l = (StringListInterface) sl; /*Typecasting is done
