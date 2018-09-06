@@ -18,7 +18,6 @@ class Student {
         //the instance variables
         this.name = name1;
     }
-
     /**
      * Gets the name.
      *
@@ -29,8 +28,21 @@ class Student {
         //value of instance variable
         return this.name;
     }
-
+    /**.
+     * { function_description }
+     *
+     * @param      other  The other
+     *
+     * @return     { description_of_the_return_value }
+     */
     @Override
+    /**.
+     * { function_description }
+     *
+     * @param      other  The other
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean equals(final Object other) { //This method is to check if two
         //students names are equal or not
         if (!(other instanceof Student)) {
@@ -40,20 +52,30 @@ class Student {
         Student that = (Student) other;
         return this.getName().equals(that.getName());
     }
-
     /**
      * Returns a string representation of the object.
      *
      * @return     String representation of the object.
      */
     public String toString() {
+        /**.
+         * { item_description }
+         */
         return this.name;
     }
 }
-
+/**
+ * Class for solution.
+ */
 public class Solution {
+    /**.
+     * { var_description }
+     */
     private static Scanner stdin = new Scanner(new BufferedInputStream(System.in));
     public static void stringType() {
+        /**.
+         * { var_description }
+         */
         List<String> listString = new List();
                 while (stdin.hasNext()) {
                     // read the line
