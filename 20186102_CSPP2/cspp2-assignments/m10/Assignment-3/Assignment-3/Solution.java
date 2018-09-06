@@ -365,15 +365,14 @@ public class Solution {
                         break;
                         default:
                     }
-                }        
+                }
     }
 
     public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
-        
         String objectType = stdin.nextLine();
 
-        switch(objectType) {
+        switch (objectType) {
             case "S"://This case will be executed for String type list
             stringType();
             break;
@@ -398,6 +397,7 @@ public class Solution {
             //list i.e to store List of Student Objects
             studentType();
             break;
+            default:
         }
     }
 }
