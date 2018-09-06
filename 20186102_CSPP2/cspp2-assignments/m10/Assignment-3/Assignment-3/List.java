@@ -137,7 +137,7 @@ public class List<E> {
         if (size == 0) 
             return "[]";
         String str = "[";
-        int i = 0;
+        int i;
         for (i = 0; i < size - 1; i++) {
             str = str + list[i] + ",";
         }
