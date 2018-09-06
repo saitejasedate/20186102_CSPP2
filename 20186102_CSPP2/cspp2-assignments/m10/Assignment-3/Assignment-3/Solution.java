@@ -33,7 +33,7 @@ class Student {
 public class Solution {
     
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         Scanner stdin = new Scanner(new BufferedInputStream(System.in));
         String objectType = stdin.nextLine();
@@ -46,7 +46,7 @@ public class Solution {
                     String line = stdin.nextLine();
                     // split the line using space
                     String[] tokens = line.split(" ");
-                    // based on the list operation invoke the 
+                    // based on the list operation invoke the
                     //corresponding method
                     switch (tokens[0]) {
                         case "add":
@@ -87,6 +87,7 @@ public class Solution {
                         System.out.println(listString.
                             contains(tokens[1]));
                         break;
+                        default:
                     }
                 }
             break;
@@ -98,7 +99,7 @@ public class Solution {
                     String line = stdin.nextLine();
                     // split the line using space
                     String[] tokens = line.split(" ");
-                    // based on the list operation invoke the 
+                    // based on the list operation invoke the
                     //corresponding method
                     switch (tokens[0]) {
                         case "add":
@@ -143,6 +144,7 @@ public class Solution {
                         System.out.println(listInteger.
                             contains(Integer.parseInt((tokens[1]))));
                         break;
+                        default:
                     }
                 }
             break;
