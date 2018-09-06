@@ -89,7 +89,7 @@ class Student {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**.
      * { var_description }
      */
@@ -97,13 +97,15 @@ public class Solution {
      BufferedInputStream(System.in));
     /**.
      * { function_description }
-     * 
      */
     private Solution() {
         /**.
          * { item_description }
          */
-    } 
+    }
+    /**.
+     * { function_description }
+     */
     public static void stringType() {
         /**.
          * { var_description }
