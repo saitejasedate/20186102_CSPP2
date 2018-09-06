@@ -4,6 +4,9 @@ import java.util.Scanner;
  * Class for student.
  */
 class Student {
+    /**.
+     * Constructs the object.
+     */
 
     private Student() {
         /**.
@@ -58,6 +61,18 @@ class Student {
 
         Student that = (Student) other;
         return this.getName().equals(that.getName());
+    }
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    @Override
+    public int hashCode() {
+        /**.
+         * { item_description }
+         */
+        return 0;
     }
     /**
      * Returns a string representation of the object.
