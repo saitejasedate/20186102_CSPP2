@@ -19,6 +19,11 @@ class Student {
         this.name = name1;
     }
 
+    /**
+     * Gets the name.
+     *
+     * @return     The name.
+     */
     public String getName() {
         //Getter method which returns the
         //value of instance variable
