@@ -1,6 +1,9 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
 
+    /**
+     * Class for solution.
+     */
     class Solution {
     /**
      * { function_description }.
