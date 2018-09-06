@@ -4,6 +4,9 @@ import java.util.Scanner;
      * Class for solution.
      */
     final class Solution {
+        /**
+         * Constructs the object.
+         */
     private Solution() {
         /**
          * { item_description }.
