@@ -10,6 +10,11 @@ import java.util.Scanner;
      *
      * @param      args  The arguments
      */
+    private Solution() {
+        /**
+         * { item_description }.
+         */
+    }
     public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         StringList sl = new StringList();
