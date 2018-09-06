@@ -9,7 +9,7 @@ class Student {
     }
 
     public String getName() {
-        //Getter method which returns the 
+        //Getter method which returns the
         //value of instance variable
         return this.name;
     }
