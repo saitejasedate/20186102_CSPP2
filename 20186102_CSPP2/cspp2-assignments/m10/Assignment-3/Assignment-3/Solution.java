@@ -105,10 +105,10 @@ public class Solution {
                             listInteger.add(Integer.parseInt(tokens[1]));
                         break;
                         case "addAll":
-                        if (tokens.length==2) {
+                        if (tokens.length == 2) {
                         String[] t1 = tokens[1].split(",");
                         Integer[] temp = new Integer[t1.length];
-                        for (int i = 0; i < temp.length; i++ ) {
+                        for (int i = 0; i < temp.length; i++) {
                             temp[i] = Integer.parseInt(t1[i]);
                         }
                         listInteger.addAll(temp);
@@ -154,17 +154,17 @@ public class Solution {
                     String line = stdin.nextLine();
                     // split the line using space
                     String[] tokens = line.split(" ");
-                    // based on the list operation invoke the 
+                    // based on the list operation invoke the
                     //corresponding method
                     switch (tokens[0]) {
                         case "add":
                             listFloat.add(Float.parseFloat(tokens[1]));
                         break;
                         case "addAll":
-                        if (tokens.length==2) {
+                        if (tokens.length == 2) {
                         String[] t1 = tokens[1].split(",");
-                        Float temp[] = new Float[t1.length];
-                        for (int i = 0; i < t1.length; i++ ) {
+                        Float[] temp = new Float[t1.length];
+                        for (int i = 0; i < t1.length; i++) {
                             temp[i] = Float.parseFloat(t1[i]);
                         }
                         listFloat.addAll(temp);
@@ -198,6 +198,7 @@ public class Solution {
                         System.out.println(listFloat.
                             contains(Float.parseFloat(tokens[1])));
                         break;
+                        default:
                     }
                 }
             break;
