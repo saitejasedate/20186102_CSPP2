@@ -1,6 +1,8 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
-//A Class is implemented for Student details
+/**
+ * Class for student.
+ */
 class Student {
     /**
      * { var_description }.
