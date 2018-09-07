@@ -3,7 +3,7 @@ import java.util.Scanner;
 //A Class is implemented for Student details
 
 /**
- *@author : manojbandari.
+ *@author : saitejasedate
  * Class for student.
  */
 class Student {
