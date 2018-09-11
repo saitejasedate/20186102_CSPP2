@@ -375,6 +375,23 @@ import java.util.Arrays;
     /*write the logic for clear.*/
         size = 0;
     }
+    /**.
+     * { function_description }
+     *
+     * @param      item  The item
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int count(final int item) {
+
+        int count = 0;
+        for (int i = 0; i < size; i++) {
+            if (item == list[i]) {
+                count += 1;
+            }
+        }
+        return count;
+    }
 }
 /**.
  * { item_description }
@@ -501,6 +518,9 @@ public final class Solution {
             break;
             case "clear":
                 l.clear();
+            break;
+            case "count":
+            System.out.println(l.count(Integer.parseInt(tokens[1])));
             break;
             default:
             break;
