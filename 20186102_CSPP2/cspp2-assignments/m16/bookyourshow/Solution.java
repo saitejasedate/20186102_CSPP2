@@ -54,8 +54,9 @@ class BookYourShow {
      * Constructs the object.
      */
     public BookYourShow() {
-        this.movielist = new Show[10];
-        this.patronlist = new Patron[10];
+        final int ten = 10;
+        this.movielist = new Show[ten];
+        this.patronlist = new Patron[ten];
         this.size = 0;
     }
     /**
