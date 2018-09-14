@@ -92,7 +92,7 @@ class BookYourShow {
      * @param      c     { parameter_description }
      * @param      d     { parameter_description }
      */
-    public void bookAShow(final String a, final String b, 
+    public void bookAShow(final String a, final String b,
         final Patron c, final String[] d) {
         int cnt = 0;
         if (size == 0) {
@@ -139,8 +139,7 @@ class BookYourShow {
             if (c.equals(patronlist[i].Contactnum)) {
                 for (int j = 0; j < size; j++) {
                     if (b.equals(movielist[j].timedate) && a.
-                        equals(movielist[j].moviename)) 
-                    {
+                        equals(movielist[j].moviename)) {
                         System.out.println(patronlist[i].
                             Contactnum + " " + a + " " + b);
                         return true;
