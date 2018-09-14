@@ -1,18 +1,23 @@
 import java.util.Scanner;
-
+/**
+ * Class for show.
+ */
 class Show {
-    String moviename;
-    String timedate;
-    String[] seats;
+    public String moviename;
+    public String timedate;
+    public String[] seats;
     public Show(String a, String b, String[] c) {
         this.moviename = a;
         this.timedate = b;
         this.seats = c;
     }
 }
+/**
+ * Class for patron.
+ */
 class Patron {
-    String Patronname;
-    String Contactnum;
+    public String Patronname;
+    public String Contactnum;
     public Patron(String a, String b) {
         this.Patronname = a;
         this.Contactnum = b;
@@ -118,6 +123,9 @@ class BookYourShow {
 
     }
 }
+/**
+ * { item_description }
+ */
 public final class Solution {
     /**
      * main method to drive program.
