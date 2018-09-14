@@ -169,7 +169,7 @@ class BookYourShow {
     }
 }
 /**
- * { item_description }
+ * { item_description }.
  */
 public final class Solution {
     /**
