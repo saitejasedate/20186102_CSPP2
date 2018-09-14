@@ -54,7 +54,7 @@ class BookYourShow {
 		movielist[movielistsize++] = k;
 	}
 	Show getAShow(String moviename, String datetime) {
-		for (int i = 0; i < movielist.length; i++) {
+		for (int i = 0; i < movielistsize; i++) {
 			if (movielist[i].getmoviename().equals(moviename)) {
 				if (movielist[i].getdatetime().equals(datetime)) {
 					return movielist[i];
