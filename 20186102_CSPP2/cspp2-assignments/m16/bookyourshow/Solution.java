@@ -3,10 +3,20 @@ import java.util.Scanner;
  * Class for show.
  */
 class Show {
+    /**
+     * { var_description }.
+     */
     public String moviename;
     public String timedate;
     public String[] seats;
-    public Show(String a, String b, String[] c) {
+    /**
+     * Constructs the object.
+     *
+     * @param      a     { parameter_description }
+     * @param      b     { parameter_description }
+     * @param      c     { parameter_description }
+     */
+    public Show(final String a, final String b, final String[] c) {
         this.moviename = a;
         this.timedate = b;
         this.seats = c;
@@ -18,7 +28,13 @@ class Show {
 class Patron {
     public String Patronname;
     public String Contactnum;
-    public Patron(String a, String b) {
+    /**
+     * Constructs the object.
+     *
+     * @param      a     { parameter_description }
+     * @param      b     { parameter_description }
+     */
+    public Patron(final String a, final String b) {
         this.Patronname = a;
         this.Contactnum = b;
     }
@@ -34,19 +50,31 @@ class BookYourShow {
     Patron[] patronlist;
     int size = 0;
     int patronsize = 0;
-
+    /**
+     * Constructs the object.
+     */
     public BookYourShow() {
         this.movielist = new Show[10];
         this.patronlist = new Patron[10];
         this.size = 0;
     }
-
-    public void addAShow(Show k) {
+    /**
+     * Adds a show.
+     *
+     * @param      k     { parameter_description }
+     */
+    public void addAShow(final Show k) {
         movielist[size++] = k;
     }
-
-
-    public Show getAShow(String a, String b) {
+    /**
+     * Gets a show.
+     *
+     * @param      a     { parameter_description }
+     * @param      b     { parameter_description }
+     *
+     * @return     A show.
+     */
+    public Show getAShow(final String a, final String b) {
         for (int i = 0; i < size; i++) {
             if ((movielist[i].moviename).equals(a)) {
                 if ((movielist[i].timedate).equals(b)) {
@@ -56,8 +84,15 @@ class BookYourShow {
         }
         return null;
     }
-
-    public void bookAShow(String a, String b, Patron c, String[] d) {
+    /**
+     * { function_description }.
+     *
+     * @param      a     { parameter_description }
+     * @param      b     { parameter_description }
+     * @param      c     { parameter_description }
+     * @param      d     { parameter_description }
+     */
+    public void bookAShow(final String a, final String b, final Patron c, final String[] d) {
         int cnt = 0;
         if (size == 0) {
             System.out.println("No show");
@@ -89,8 +124,16 @@ class BookYourShow {
             }
         }
     }
-
-    public boolean printTicket(String a, String b, String c) {
+    /**
+     * { function_description }.
+     *
+     * @param      a     { parameter_description }
+     * @param      b     { parameter_description }
+     * @param      c     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public boolean printTicket(final String a, final String b, final String c) {
         for (int i = 0; i < patronsize; i++) {
             if (c.equals(patronlist[i].Contactnum)) {
                 for (int j = 0; j < size; j++) {
@@ -102,8 +145,10 @@ class BookYourShow {
             }
         }
         return false;
-
     }
+    /**
+     * Shows all.
+     */
     public void showAll() {
         if (movielist.length > 0) {
             for (int i = 0; i < size; i++) {
