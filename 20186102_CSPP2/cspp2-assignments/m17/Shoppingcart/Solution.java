@@ -270,7 +270,7 @@ class ShoppingCart {
         float discount = totalAmount() * couponcode;
         System.out.println("Disc%:" + discount);
         float finalAmount = totalAmount() - discount;
-        System.out.println("Tax:" + (finalAmount * 15 / 100));
+        System.out.println("Tax:" + (finalAmount * magicnum / temp));
         System.out.println("Payable amount: " + getPayableAmount());
     }
 
