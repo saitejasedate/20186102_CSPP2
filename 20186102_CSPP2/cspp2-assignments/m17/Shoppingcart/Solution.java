@@ -201,8 +201,10 @@ class ShoppingCart {
         float sum = 0.0f;
         for (int i = 0; i < cartSize; i++) {
             for (int j = 0; j < catalogSize; j++) {
-                if (cart[i].getProductName().equals(catalog[j].getProductName())) {
-                    sum = sum + (cart[i].getQuantity() * catalog[j].getUnitPrice());
+                if (cart[i].getProductName().
+                	equals(catalog[j].getProductName())) {
+                    sum = sum + (cart[i].
+                    	getQuantity() * catalog[j].getUnitPrice());
                 }
             }
         }
