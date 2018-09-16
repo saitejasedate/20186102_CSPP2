@@ -88,7 +88,7 @@ class ShoppingCart {
     /**
      * { var_description }.
      */
-    private final int TEMP = 100;
+    private final int temp = 100;
     /**
      *  catalog size.
      */
@@ -118,8 +118,8 @@ class ShoppingCart {
      * Constructs the object.
      */
     ShoppingCart() {
-        catalog = new Item[TEMP];
-        cart = new Item[TEMP];
+        catalog = new Item[temp];
+        cart = new Item[temp];
         catalogSize = 0;
         cartSize = 0;
         flag = false;
@@ -220,7 +220,7 @@ class ShoppingCart {
         float totalAmount = totalAmount();
         float discount = totalAmount * couponcode;
         float finalAmount = totalAmount - discount;
-        float payableAmount = finalAmount + (finalAmount * 15 / 100);
+        float payableAmount = finalAmount + (finalAmount * 15 / temp);
         return payableAmount;
     }
 
