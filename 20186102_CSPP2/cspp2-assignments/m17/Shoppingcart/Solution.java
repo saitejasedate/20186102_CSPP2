@@ -90,6 +90,10 @@ class ShoppingCart {
      */
     private final int temp = 100;
     /**
+     * { var_description }.
+     */
+    private final int magicnum = 15;
+    /**
      *  catalog size.
      */
     private int catalogSize;
@@ -220,7 +224,7 @@ class ShoppingCart {
         float totalAmount = totalAmount();
         float discount = totalAmount * couponcode;
         float finalAmount = totalAmount - discount;
-        float payableAmount = finalAmount + (finalAmount * 15 / temp);
+        float payableAmount = finalAmount + (finalAmount * magicnum / temp);
         return payableAmount;
     }
 
