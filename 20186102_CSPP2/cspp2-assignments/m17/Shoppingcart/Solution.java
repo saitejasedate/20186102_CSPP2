@@ -96,6 +96,22 @@ class ShoppingCart {
     /**
      *  catalog size.
      */
+    private final float magicnum1 = 0.1f;
+    /**
+     *  catalog size.
+     */
+    private final float magicnum2 = 0.2f;
+    /**
+     *  catalog size.
+     */
+    private final float magicnum3 = 0.3f;
+    /**
+     *  catalog size.
+     */
+    private final float magicnum4 = 0.5f;
+    /**
+     *  catalog size.
+     */
     private int catalogSize;
     /**
      * cart size.
@@ -236,13 +252,13 @@ class ShoppingCart {
     public void applyCoupon(final String coupon) {
         if (flag == false) {
             if (coupon.equals("IND10")) {
-                couponcode = 0.1f;
+                couponcode = magicnum1;
             } else if (coupon.equals("IND20")) {
-                couponcode = 0.2f;
+                couponcode = magicnum2;
             } else if (coupon.equals("IND30")) {
-                couponcode = 0.3f;
+                couponcode = magicnum3;
             } else if (coupon.equals("IND50")) {
-                couponcode = 0.5f;
+                couponcode = magicnum4;
             } else {
                 System.out.println("Invalid coupon");
                 return;
@@ -279,7 +295,20 @@ class ShoppingCart {
 /**
  * Class for solution.
  */
-class Solution {
+public class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	protected Solution() {
+		/**
+		 * { item_description }.
+		 */
+	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      args  The arguments
+	 */
     public static void main(final String[] args) {
         ShoppingCart s = new ShoppingCart();
         Scanner stdin = new Scanner(new BufferedInputStream(System.in));
