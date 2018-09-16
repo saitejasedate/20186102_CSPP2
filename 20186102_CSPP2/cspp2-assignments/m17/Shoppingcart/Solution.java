@@ -250,7 +250,7 @@ class ShoppingCart {
      * @param      coupon  The coupon
      */
     public void applyCoupon(final String coupon) {
-        if (flag == false) {
+        if (!flag) {
             if (coupon.equals("IND10")) {
                 couponcode = magicnum1;
             } else if (coupon.equals("IND20")) {
