@@ -222,9 +222,9 @@ class ShoppingCart {
         for (int i = 0; i < cartSize; i++) {
             for (int j = 0; j < catalogSize; j++) {
                 if (cart[i].getProductName().
-                	equals(catalog[j].getProductName())) {
+                    equals(catalog[j].getProductName())) {
                     sum = sum + (cart[i].
-                    	getQuantity() * catalog[j].getUnitPrice());
+                        getQuantity() * catalog[j].getUnitPrice());
                 }
             }
         }
@@ -296,19 +296,19 @@ class ShoppingCart {
  * Class for solution.
  */
 public class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	protected Solution() {
-		/**
-		 * { item_description }.
-		 */
-	}
-	/**
-	 * { function_description }.
-	 *
-	 * @param      args  The arguments
-	 */
+    /**
+     * Constructs the object.
+     */
+    protected Solution() {
+        /**
+         * { item_description }.
+         */
+    }
+    /**
+     * { function_description }.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         ShoppingCart s = new ShoppingCart();
         Scanner stdin = new Scanner(new BufferedInputStream(System.in));
