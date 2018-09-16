@@ -148,7 +148,6 @@ public final class Solution {
 
 			case "get":
 				Show show = bys.getAShow(check[1], tokens[1]);
-				System.out.println(show);
 				if (show != null) {
 					System.out.println(check[1] + "," + tokens[1]);
 				} else {
