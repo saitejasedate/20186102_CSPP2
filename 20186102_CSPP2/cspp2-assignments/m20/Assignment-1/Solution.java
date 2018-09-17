@@ -178,7 +178,7 @@ class Quiz {
      */
     Quiz() {
         this.questions = new Question[this.onehundred];
-        final int size = 0;
+        size = 0;
     }
 
     /**
