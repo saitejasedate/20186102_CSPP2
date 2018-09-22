@@ -148,7 +148,10 @@ public class TodoistMain {
      */
     public static void testTask(final String[] tokens) {
         try {
-            System.out.println(createTask(tokens));
+    		Task s = createTask(tokens);
+        	if (!s.gettitle().equals("")) {
+            	System.out.println(s);
+        	}
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
