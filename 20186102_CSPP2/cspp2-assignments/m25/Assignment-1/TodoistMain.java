@@ -68,10 +68,10 @@ class Task {
 	public void setstatus(String status) {
 		this.status = status;
 	}
-	// public String toString() {		
-	// 	String s = this.title+","+this.assignedTo+","+this.important+","+this.urgent+","+this.status;
-	// 	return s;
-	// }
+	public String toString() {		
+		String s = this.title+","+this.assignedTo+","+this.important+","+this.urgent+","+this.status;
+		return s;
+	}
 }
 class Todoist {
 	private int ten = 10;
