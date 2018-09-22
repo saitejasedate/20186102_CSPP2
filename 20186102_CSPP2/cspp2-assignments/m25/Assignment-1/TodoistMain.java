@@ -50,7 +50,7 @@ class Task {
 		if(true) {
 			return("Important");
 		}
-		return("false");
+		return("Not Important");
 	}
 	public boolean geturgent() {
 		return urgent;
@@ -60,16 +60,19 @@ class Task {
 		if(true) {
 			return("Urgent");
 		}
-		return("false");
+		return("Not Urgent");
 	}
 	public String getstatus() {
 		return status;
 	}
-	public void setstatus(String status) {
-		this.status = status;
+	public String setstatus(String status) {
+		if(status.equals("todo")) {
+			return("todo");
+		}
+		return("done");
 	}
 	public String toString() {		
-		String s = this.title+", "+this.assignedTo+", "+this.timeToComplete+", "+setimportant(important)+", "+seturgent(urgent)+", "+this.status;
+		String s = this.title+", "+this.assignedTo+", "+this.timeToComplete+", "+setimportant(important)+", "+seturgent(urgent)+", "+setstatus(status);
 		return s;
 	}
 }
