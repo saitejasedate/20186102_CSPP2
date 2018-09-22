@@ -16,7 +16,7 @@ class Task {
 		if (title.equals("")) {
 			System.out.println("Title not provided");
 		} else if (timeToComplete < 0) {
-			System.out.println("Invalid timeToComplete" + Integer.toString(timeToComplete));
+			System.out.println("Invalid timeToComplete " + Integer.toString(timeToComplete));
 		} else if (status.equals("todo") || status.equals("done")) {
 			this.title = title;
 			this.assignedTo = assignedTo;
