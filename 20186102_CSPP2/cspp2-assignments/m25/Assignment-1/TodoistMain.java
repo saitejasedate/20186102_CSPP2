@@ -49,8 +49,7 @@ class Task {
 	public String setimportant(boolean important) {
 		if(true) {
 			return("Important");
-		}
-		return("Not Important");
+		} return("Not Important");
 	}
 	public boolean geturgent() {
 		return urgent;
@@ -59,8 +58,7 @@ class Task {
 	public String seturgent(boolean urgent) {
 		if(true) {
 			return("Urgent");
-		}
-		return("Not Urgent");
+		} return("Not Urgent");
 	}
 	public String getstatus() {
 		return status;
