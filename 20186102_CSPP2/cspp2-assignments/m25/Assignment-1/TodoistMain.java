@@ -11,6 +11,7 @@ class Task {
 	private boolean important;
 	private boolean urgent;
 	private String status;
+	private int temp;
 	Task(String title, String assignedTo, int timeToComplete, boolean important, boolean urgent, String status) {
 		if (title.equals("")) {
 			System.out.println("Title not provided");
@@ -23,6 +24,7 @@ class Task {
 			this.important = important;
 			this.urgent = urgent;
 			this.status = status;
+			this.temp = 1;
 		} else {
 			System.out.println("Invalid status " + status);
 		}
@@ -62,7 +64,9 @@ class Task {
 	public boolean geturgent() {
 		return urgent;
 	}
-
+	public int gettemp() {
+		return temp;
+	}
 	public String seturgent(boolean urgent) {
 		if (urgent == true) {
 			return ("Urgent");
@@ -157,7 +161,7 @@ public class TodoistMain {
 	public static void testTask(final String[] tokens) {
 		try {
 			Task s = createTask(tokens);
-			if (s.gettimeToComplete() == 0) {
+			if (s.gettemp() == 1) {
 				System.out.println(s);
 			}
 		} catch (Exception e) {
