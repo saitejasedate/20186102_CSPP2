@@ -157,7 +157,7 @@ public class TodoistMain {
 	public static void testTask(final String[] tokens) {
 		try {
 			Task s = createTask(tokens);
-			if (!s.gettitle().equals("")) {
+			if (s.gettimeToComplete() == 0) {
 				System.out.println(s);
 			}
 		} catch (Exception e) {
