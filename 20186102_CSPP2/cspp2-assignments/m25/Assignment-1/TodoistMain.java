@@ -69,7 +69,7 @@ class Task {
 		this.status = status;
 	}
 	public String toString() {		
-		String s = this.title+","+this.assignedTo+","+this.important+","+this.urgent+","+this.status;
+		String s = this.title+", "+this.assignedTo+", "+this.timeToComplete+", "+setimportant(important)+", "+seturgent(urgent)+", "+this.status;
 		return s;
 	}
 }
