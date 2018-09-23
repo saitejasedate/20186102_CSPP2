@@ -1,103 +1,127 @@
-// import java.util.LinkedHashMap;
-import java.util.*;
-import java.io.*;
-class Plagarism {
-	Plagarism() {
-	}
-	String DocToString(File doc) {
-		String FileString = "";
-		try {
-			Scanner in = new Scanner(new FileReader(doc));
-			StringBuilder sb = new StringBuilder();
-			while (in.hasNext()) {
-				sb.append(in.next());
-				sb.append(" ");
-			}
-			in.close();
-			FileString = sb.toString();
-		} catch (FileNotFoundException ex) {
-			System.out.println("no file");
-		}
-		return FileString;
-	}
-	String cleanDoc(String DocString) {
-		String DocStr = DocString.toLowerCase();
-		String  result = DocStr.replaceAll("[^a-zA-Z0-9\\s]", " ");
-		// System.out.println(result);
-		return result;
-	}
-	int Count(String keyWord, String[] list) {
-		int count = 0;
-		for (String word : list) {
-			if (keyWord.equals(word))
-				count++;
-		}
-		return count;
-	}
+import java.io.File;
+import java.util.Scanner;
+import java.util.NoSuchElementException;
+import java.io.FileReader;
+import java.io.FileNotFoundException;
+/**
+ * Class for substring.
+ */
+class Substring {
+    /**
+     * constructor for substring method.
+     */
+    Substring() {
 
-	double EucledianNorm(HashMap<String, Integer> mappy) {
-		double sum = 0;
-		double result;
-		for (String key : mappy.keySet()) {
-			sum += Math.pow(mappy.get(key), 2);
-		}
-		return Math.sqrt(sum);
-	}
-	double dotProduct(HashMap<String, Integer> mappy1, HashMap<String, Integer> mappy2) {
-		double Sum = 0;
-		for (String word : mappy1.keySet()) {
-			if (mappy2.containsKey(word)) {
-				Sum += mappy1.get(word) * mappy2.get(word);
-			}
-		}
-		return Sum;
-	}
-	double percentPlag(File doc1, File doc2) {
-		// String DocString1 = cleanDoc(DocToString(doc1));
-		// String DocString2 = cleanDoc(DocToString(doc2));
-		String DocString1 = DocToString(doc1).toLowerCase();
-		String DocString2 = DocToString(doc2).toLowerCase();
-		System.out.println(DocString1);
-		String[] listStr1 = DocString1.split(" ");
-		String[] listStr2 = DocString2.split(" ");
-		HashMap<String, Integer> map1 = new HashMap<String, Integer>();
-		HashMap<String, Integer> map2 = new HashMap<String, Integer>();
-		for (String word : listStr1) {
-			map1.put(word, Count(word, listStr1));
-		}
-		for (String word : listStr2) {
-			map2.put(word, Count(word, listStr2));
-		}
-		// for (String key : map2.keySet()) {
-		// 	System.out.println(key + " " + map2.get(key));
-		// }
-		double EuNo1 = EucledianNorm(map1);
-		double EuNo2 = EucledianNorm(map2);
-		double Dot = dotProduct(map1, map2);
-		double similarity = Dot / (EuNo1 * EuNo2);
-		return similarity * 100;
-	}
-
+    }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @param      givenFile  The given file
+     *
+     * @return     String representation of the object.
+     */
+    public String toString(final File givenFile) {
+        String result = "";
+        try {
+            Scanner s = new Scanner(new FileReader(givenFile));
+            StringBuilder sb = new StringBuilder();
+            while (s.hasNext()) {
+                sb.append(s.next());
+                sb.append(" ");
+            }
+            s.close();
+            result = sb.toString();
+        } catch (FileNotFoundException e) {
+            System.out.println("no file");
+        }
+        return result;
+    }
+    /**
+     * method to find longest common substring.
+     *
+     * @param      firstString   The first string
+     * @param      secondString  The second string
+     *
+     * @return     returns the lcs value.
+     */
+    public double findLCS(final String firstString, final String secondString) {
+    int lengthOne = firstString.length();
+    int lengthTwo = secondString.length();
+    double totalLength = lengthOne + lengthTwo;
+    int[][] tempMatrix = new int[lengthOne + 1][lengthTwo + 1];
+    double result = 0;
+    double lcsValue = 0;
+    for (int i = 0; i <= lengthOne; i++) {
+        for (int j = 0; j <= lengthTwo; j++) {
+            if (i == 0 || j == 0) {
+                tempMatrix[i][j] = 0;
+            } else if (firstString.charAt(i - 1)
+             == secondString.charAt(j - 1)) {
+                tempMatrix[i][j] =
+                 tempMatrix[i - 1][j - 1] + 1;
+            } else {
+                tempMatrix[i][j] = 0;
+            }
+            if (result < tempMatrix[i][j]) {
+                result = tempMatrix[i][j];
+            }
+        }
+    }
+    final int hundred = 100;
+    lcsValue = ((result * 2) / totalLength) * hundred;
+    // System.out.println((int)lcsValue);
+    return Math.round(lcsValue * hundred) / hundred;
+    }
 }
+/**
+ * Class for solution.
+ */
 class Solution {
-	public static void main(String[] args) {
-		Plagarism PlagarismCheck = new Plagarism();
-		Scanner scan = new Scanner(System.in);
-		String path = scan.nextLine();
-		File folder = new File(path);
-		File[] listOfFiles = folder.listFiles();
-		int len = listOfFiles.length;
-		double[][] percent = new double[len][len];
-		for (int i = 0; i < len; i++) {
-			for (int j = 0; j < len; j++) {
-				percent[i][j] = PlagarismCheck.percentPlag(listOfFiles[i], listOfFiles[j]);
-			}
-		}
-		for (int i = 0 ; i < len; i++) {
-			for (int j = 0; j < len; j++) {
-				System.out.print((int)percent[i][j] + " ");
-			}
-			System.out.println("");
-		}
-	}
+    /**
+     * constructor for solution class.
+     */
+    protected Solution() {
+
+    }
+    /**
+     * main method for solution class.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        try {
+        Substring s = new Substring();
+        String path;
+        Scanner scan = new Scanner(System.in);
+        path = scan.nextLine();
+        File folder = new File(path);
+        File[] filesList = folder.listFiles();
+        int length = filesList.length;
+        double[][] matrix = new double[length][length];
+        for (int i = 0; i < length; i++) {
+            for (int j = 0; j < length; j++) {
+                matrix[i][j] = s.findLCS(
+                    s.toString(filesList[i]),
+                     s.toString(filesList[j]));
+            }
+        }
+        System.out.print("     \t");
+        for (int i = 0; i < filesList.length - 1; i++) {
+            System.out.print("\t" + filesList[i].getName());
+        }
+        System.out.println("\t" + filesList[length - 1].getName());
+        for (int i = 0; i < length; i++) {
+            System.out.print(filesList[i].getName() + "\t");
+            for (int j = 0; j < length; j++) {
+                System.out.print(
+                    matrix[i][j] + "        ");
+            }
+            System.out.println();
+        }
+    } catch (NoSuchElementException e) {
+        System.out.println("Empty Directory");
+    }
+
+    }
 }
+
